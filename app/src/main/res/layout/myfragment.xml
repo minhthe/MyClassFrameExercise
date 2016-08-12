@@ -1,0 +1,9 @@
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:background="#00bbff"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just do it!"/>
+</RelativeLayout>
