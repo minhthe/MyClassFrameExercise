@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by ttran230 on 8/12/2016.
@@ -30,9 +31,14 @@ public class MyFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cv.sendMessage("from the fragment1");
+                cv.sendMessage(" From the Fragment_1");
             }
         });
+
+
+        TextView textView = (TextView) view.findViewById(R.id.txtMyFragment);
+        String  getString = getArguments().getString("name");
+        textView.setText(getString);
         return view;
     }
 
